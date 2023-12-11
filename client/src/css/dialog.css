@@ -1,0 +1,1422 @@
+/* -------------------------------------------------- */
+.container-up {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form_product_top {
+  margin-top: 1%;
+  padding: 0 24px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.frames_add_product {
+  width: 100%;
+  height: 390px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+.form_blog_top {
+  margin: 1.8% 0 0.8% 0;
+  padding: 0 24px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.select {
+  width: 40%;
+  display: flex;
+  position: relative;
+  height: 3em;
+  line-height: 3;
+  overflow: hidden;
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  color: #d4d4d4;
+  background-color: #f9fafb;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+
+.select:hover::after {
+  color: #2065d1;
+  background-color: #e8eef7;
+}
+.select select option:hover::after {
+  color: #2065d1;
+  background-color: #f80808;
+}
+.select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 2px solid #f9fafb;
+  border-radius: 8px;
+  background-image: none;
+  flex: 1;
+  padding: 0 1em;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 1.1em;
+  font-family: "Open Sans", sans-serif;
+}
+
+select {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none; */
+  outline: 0;
+  box-shadow: none;
+  border: 2px solid #f9fafb;
+  border-radius: 8px;
+  background-image: none;
+  flex: 1;
+  padding: 0 1em;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+}
+textarea {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none; */
+  outline: 0;
+  box-shadow: none;
+  border: 2px solid #f9fafb;
+  border-radius: 8px;
+  background-image: none;
+  flex: 1;
+  padding: 0 1em;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+}
+.select select::-ms-expand {
+  display: none;
+}
+.form_loading {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+}
+.btn_loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 15%;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border-radius: 5px;
+}
+/*-------- left --------*/
+.form input {
+  width: 100%;
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  color: black;
+  outline: none;
+  padding: 15px 20px;
+  background: none;
+}
+/* -------------------------------------- */
+
+.form_dateGG {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border-radius: 5px;
+}
+.form_dateGG input {
+  width: 100%;
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  color: black;
+  outline: none;
+  padding: 14px 20px;
+  background: none;
+}
+.form_date_blog input {
+  width: 100%;
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  color: black;
+  outline: none;
+  padding: 14px 20px;
+  background: none;
+}
+
+/* -------------------------------------- */
+.form-date {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.form_nhap {
+  position: relative;
+  width: 35%;
+}
+.form_nhap input {
+  width: 100%;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  color: black;
+  outline: none;
+  padding: 10px 20px;
+  background: none;
+}
+
+/* -------------------------------------- */
+.form_sale {
+  width: 30%;
+}
+.form_sale select {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 12px 10px;
+}
+
+/* -------------------------------------- */
+.form_trangthai {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border-radius: 5px;
+}
+.form_trangthai select {
+  font-size: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+/* -------------------------------------- */
+.form-loaiSP {
+  width: 100%;
+  padding-top: 15px;
+}
+.form-loaiSP select {
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px 20px;
+}
+
+/* -------------------------------------- */
+.form_mota {
+  width: 100%;
+  margin-top: 15px;
+}
+.form_mota textarea {
+  border-radius: 5px;
+  border: none;
+}
+.mota_txtArea {
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 12px 17px;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+.motalsp_txtArea {
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 12px 17px;
+  border-radius: 8px;
+  border: none;
+}
+.motalsp_txtArea textarea {
+  border-radius: 8px;
+}
+
+.form_giaGoc label,
+.form_Product label,
+.form_dateGG label,
+.form_date_product label,
+.form_date_blog label,
+.form label,
+.form_nhap label {
+  position: absolute;
+  left: 1rem;
+  top: 14px;
+  padding: 0 5px;
+  color: black;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  background-color: rgb(255, 255, 255);
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: -0.4rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+
+.btn-dialog {
+  width: 95%;
+  margin: 2.5%;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+.btn_add_cancel {
+  margin: 1%;
+  width: 20%;
+  height: 40px;
+}
+.btn_add_cancel_ChiTietSP {
+  margin: 0 1%;
+  width: 20%;
+  height: 40px;
+}
+.btn-dialog-sp-fix {
+  width: 95%;
+  margin: 0 2.5% 2.5% 2.5%;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+.btn_add_cancel_sp_fix {
+  margin: 1%;
+  width: 20%;
+  height: 40px;
+}
+
+/* --------------- dialog Chi tiết sản phẩm ---------------*/
+.frames_chitiet {
+  width: 100%;
+  height: 520px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+.dialog_xemthem_left {
+  width: 36%;
+  float: left;
+  margin: 6% 0 2% 4%;
+  text-align: center;
+}
+.dialog_xemthem_left_top {
+  width: 90%;
+  text-align: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.detail-main-top-left-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.detail-main-top-left-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+.dialog_xemthem_left_bottom {
+  border-radius: 8px;
+  padding: 10px 0;
+}
+.mota_title {
+  display: flex;
+  font-weight: 600;
+  line-height: 1.5714285714285714;
+  font-size: 1rem;
+  width: 100%;
+  padding: 0 5px 5px 10px;
+}
+.mota_content {
+  width: 98%;
+  height: 115px;
+  margin: 0 1%;
+  padding: 0 5px;
+  overflow-y: scroll;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+.dialog_xemthem_right {
+  background-color: #ffcccc;
+  border-radius: 8px;
+  width: 56%;
+  height: 490px;
+  margin: 1% 2%;
+  padding: 1% 2% 2% 2%;
+  float: right;
+}
+
+.dl_ten {
+  border-bottom: 1px solid #f0f2f4;
+  display: flex;
+  font-weight: 600;
+  line-height: 1.5714285714285714;
+  font-size: 1.5rem;
+  padding: 0 10px 10px 10px;
+  width: 100%;
+}
+.dl_soLuong {
+  border-bottom: 1px solid #f0f2f4;
+  display: flex;
+  font-weight: 600;
+  line-height: 1.5714285714285714;
+  font-size: 0.8rem;
+  padding: 10px;
+  width: 100%;
+}
+.dl_gia {
+  float: left;
+  border-bottom: 1px solid #f0f2f4;
+  display: flex;
+  font-weight: 600;
+  line-height: 1.5714285714285714;
+  font-size: 0.9rem;
+  padding: 10px;
+  width: 50%;
+}
+.dl_loaiSP {
+  border-bottom: 1px solid #f0f2f4;
+  display: flex;
+  font-weight: 600;
+  line-height: 1.5714285714285714;
+  font-size: 0.9rem;
+  padding: 10px;
+  width: 100%;
+}
+.dl_trangthai {
+  border-bottom: 1px solid #f0f2f4;
+  display: flex;
+  font-weight: 600;
+  line-height: 1.5714285714285714;
+  font-size: 0.9rem;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn_dialog {
+  width: 100%;
+}
+.btn_cancel {
+  width: 10%;
+  height: 40px;
+}
+
+/* ========== dialog mã giảm giá ==========*/
+.frames_sale {
+  width: 100%;
+  background: #f9f9f9;
+  border-radius: 5px;
+  display: flex;
+}
+.sale_left {
+  padding: 4%;
+  margin: 4%;
+  background: #ddebff;
+  width: 92%;
+  border-radius: 8px;
+}
+.sale_left_top {
+  width: 100%;
+  height: 78px;
+}
+
+.sale_right_top {
+  width: 100%;
+  height: 78px;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: "Upload Image";
+  color: white;
+  display: inline-block;
+  background: #a162f7;
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.custom-file-input:hover::before {
+  border: 1px solid #fff;
+  color: #f9f9f9;
+}
+.custom-file-input:active {
+  outline: 0;
+}
+.custom-file-input:active::before {
+  color: #5f5f5f;
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+/* ========== dialog thêm, sửa, loại sản phẩm ==========*/
+.frames_loaiSp {
+  width: 100%;
+  height: 390px;
+  background: #f9f9f9;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.frames_loaiSp_top {
+  width: 100%;
+  display: flex;
+}
+.loaiSP_left {
+  padding: 2%;
+  margin: 2%;
+  background: #ffcccc;
+  width: 26%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form_img_image {
+  background: #fff;
+  border: 1px solid #ddebff;
+  border-radius: 5px;
+  width: 100%;
+  height: 250px;
+}
+
+.form_img_click {
+  width: 100%;
+}
+/* image LSP */
+.custom-file-input {
+  width: 95%;
+  color: transparent;
+}
+.form_trangthai_lsp {
+  width: 95%;
+  height: 50px;
+  background: #fff;
+  border-radius: 5px;
+}
+.form_trangthai_lsp select {
+  font-size: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+}
+.loaiSP_right {
+  padding: 3% 2%;
+  margin: 2% 2% 2% 0;
+  background: #ddebff;
+  width: 68%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.form_right_top {
+  width: 100%;
+  height: 78px;
+}
+.frames_loaiSp_bottom {
+  padding: 2%;
+  margin: 0 2%;
+  background: #fff6e5;
+  width: 96%;
+  height: 160px;
+  border-radius: 8px;
+}
+.form_mota_LSP {
+  margin-top: 4%;
+  width: 100%;
+  height: 147px;
+}
+.form_mota_LSP textarea {
+  border-radius: 5px;
+}
+/* sửa */
+.frames_loaiSpFix {
+  width: 100%;
+  height: 430px;
+  background: #f9f9f9;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.loaiSP_left_fix {
+  padding: 2%;
+  margin: 2%;
+  background: #ffcccc;
+  width: 46%;
+  height: 390px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.form_lsp_left {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+}
+
+.loaiSP_right_fix {
+  padding: 2%;
+  margin: 2% 2% 2% 0;
+  background: #ddebff;
+  width: 48%;
+  height: 390px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.form_imglsp_left {
+  width: 50%;
+  display: flex;
+}
+.form_imglsp_right {
+  width: 50%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.form_img_imageFix {
+  background: #fff;
+  border: 1px solid #ddebff;
+  border-radius: 5px;
+  width: 90%;
+  height: 190px;
+}
+
+.form_img_clickFix {
+  margin-top: 4%;
+  width: 48%;
+  display: flex;
+  justify-content: flex-end;
+}
+.form_mota_LSP_fix {
+  width: 100%;
+}
+.form_mota_LSP_fix textarea {
+  border-radius: 5px;
+}
+
+.form_warning {
+  width: 100%;
+  font-size: 15px;
+  color: red;
+  display: flex;
+}
+.btn-dialog-sale {
+  width: 92%;
+  margin: 2% 4%;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+.btn_add_cancel_sale {
+  margin: 1% 3%;
+  width: 30%;
+  height: 40px;
+}
+
+/* ========== dialog thêm, sửa, sản phẩm PRODUCT==========*/
+.frames_product {
+  width: 100%;
+  height: 370px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+.form_AddSP_Left {
+  margin: 2% 1% 2% 2%;
+  padding: 2%;
+  width: 37%;
+  float: left;
+  background-color: #fff6e5;
+  border-radius: 8px;
+}
+.form_addsp_left_top {
+  width: 100%;
+  display: flex;
+  height: 78px;
+}
+.form_addsp_left_top_img {
+  width: 40%;
+  height: 43px;
+  display: flex;
+}
+/* ảnh */
+.form_img_product {
+  width: 100%;
+}
+/* input img product */
+.custom-file-input-sp {
+  width: 90%;
+  color: transparent;
+}
+.custom-file-input-sp::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input-sp::before {
+  content: "Upload Image";
+  display: inline-block;
+  background: #a162f7;
+  text-align: center;
+  color: white;
+  width: 100%;
+  border: 1px solid gray;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 15px 5px;
+}
+.custom-file-input-sp:hover::before {
+  border: 1px solid #fff;
+  color: #f9f9f9;
+}
+.custom-file-input-sp:active {
+  outline: 0;
+}
+.custom-file-input-sp:active::before {
+  color: #5f5f5f;
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+.form_addsp_left_top_date {
+  width: 60%;
+}
+.form_addsp_left_bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.label_img {
+  padding: 1.5% 0 0 2%;
+  width: 30%;
+  text-align: center;
+}
+/* id ảnh */
+
+/* tên */
+
+/* hoạt động */
+
+.form_AddSP_Right {
+  margin: 2% 2% 2% 1%;
+  padding: 2%;
+  width: 57%;
+  float: right;
+  background-color: #ddebff;
+  border-radius: 8px;
+}
+
+.form_Product {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.form_Product input {
+  width: 100%;
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  color: black;
+  outline: none;
+  padding: 12px 20px;
+  background: none;
+}
+.form_addsp_left_top_id {
+  width: 38%;
+  margin-right: 4%;
+  height: 78px;
+}
+.form_addsp_left_top_name {
+  width: 68%;
+  height: 78px;
+}
+.form_addsp_right_bottom {
+  width: 100%;
+  display: flex;
+}
+.form_addsp_right_bottom1 {
+  width: 53%;
+  margin: 0 2% 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.form_addsp_right_bottom2 {
+  width: 43%;
+  margin: 0 0 0 2%;
+  display: flex;
+}
+.form_mota_Product {
+  width: 100%;
+  height: 205px;
+}
+.form_mota_Product textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.form_trangthai_product {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+}
+.form_trangthai_product select {
+  font-size: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 0 15px 15px;
+}
+.form_trangthai_product select option {
+  width: 100%;
+  padding: 2% 4%;
+}
+.form_trangthai_product select :hover {
+  color: rgb(98, 0, 255);
+}
+/* sửa */
+.frames_product_fix {
+  width: 100%;
+  height: 540px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+}
+.frames_pro_fix_top {
+  width: 100%;
+  display: flex;
+}
+.frames_pro_fix_bottom {
+  width: 96%;
+  background: #ffcccc;
+  margin: 0 2% 1% 2%;
+  border-radius: 8px;
+  display: flex;
+}
+.form_UpDateSP_Left {
+  margin: 2% 1% 2% 2%;
+  padding: 1% 2% 0 2%;
+  width: 47%;
+  float: left;
+  background-color: #fff6e5;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form_img_cu {
+  width: 100%;
+  height: 130px;
+  display: flex;
+}
+
+.form_img_moi {
+  width: 100%;
+  display: flex;
+  height: 78px;
+}
+.form_img_click_sp_fix {
+  width: 40%;
+  display: flex;
+}
+.form_date_sp_fix {
+  width: 60%;
+  display: flex;
+}
+.form_date_product {
+  position: relative;
+  width: 100%;
+  height: 43px;
+  background: #fff;
+  border-radius: 8px;
+}
+.form_date_product input {
+  width: 100%;
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: inherit;
+  color: black;
+  outline: none;
+  padding: 10px 20px;
+  background: none;
+}
+/* input img product fix */
+.custom-file-input-sp-fix {
+  width: 90%;
+  color: transparent;
+}
+.custom-file-input-sp-fix::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input-sp-fix::before {
+  content: "Upload Image";
+  display: inline-block;
+  background: #a162f7;
+  text-align: center;
+  color: white;
+  width: 100%;
+  border: 1px solid gray;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 12px 5px;
+}
+.custom-file-input-sp-fix:hover::before {
+  border: 1px solid #fff;
+  color: #f9f9f9;
+}
+.custom-file-input-sp-fix:active {
+  outline: 0;
+}
+.custom-file-input-sp-fix:active::before {
+  color: #5f5f5f;
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+.form_UpDateSP_Right {
+  margin: 2% 2% 2% 1%;
+  padding: 2%;
+  width: 47%;
+  height: 232px;
+  float: left;
+  background-color: #ddebff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.frames_pro_fix_bottom_left {
+  width: 44%;
+  margin: 2% 2% 0 4%;
+}
+.ipt_validate_sp {
+  width: 100%;
+  height: 78px;
+}
+.ipt_validate_sp_area {
+  width: 100%;
+  height: 155px;
+  border-radius: 8px;
+}
+.form_mota_Product_fix {
+  width: 100%;
+  height: 125px;
+}
+.form_mota_Product_fix textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.mota_sp_fix {
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+.frames_pro_fix_bottom_right {
+  width: 44%;
+  margin: 2% 4% 0 2%;
+}
+.imgUpdateProduct {
+  width: 100%;
+  display: flex;
+}
+.format_img_sp {
+  margin: 0 1% 1% 1%;
+}
+
+/* -------------------- dialog them sua xoa blog ------------------ */
+.blog_top {
+  width: 100%;
+  background-color: #5f5f5f;
+  height: 180px;
+  display: flex;
+}
+.blog_left {
+  padding: 2%;
+  margin: 2%;
+  background: #ffcccc;
+  width: 31%;
+  height: 360px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog_top_left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog_top_right {
+  width: 100%;
+}
+
+.form_img_image_blog {
+  background: #fff;
+  border: 1px solid #ddebff;
+  border-radius: 5px;
+  width: 60%;
+  height: 200px;
+}
+.form_img_click_blog {
+  width: 34%;
+}
+.date_blog {
+  width: 100%;
+  height: 78px;
+  display: flex;
+  justify-content: center;
+}
+.form_date_blog {
+  position: relative;
+  width: 95%;
+  height: 50px;
+  background: #fff;
+  border-radius: 5px;
+}
+.blog_right {
+  padding: 2%;
+  margin: 2% 2% 2% 0;
+  background: #ddebff;
+  width: 63%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* sửa blog----------------------------------------------------------*/
+.frames_blogFix {
+  width: 100%;
+  height: 440px;
+  background: #f9f9f9;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.blog_left_fix {
+  padding: 2%;
+  margin: 2%;
+  background: #ffcccc;
+  width: 46%;
+  height: 400px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.form_blog_left {
+  width: 100%;
+  height: 285px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+}
+.form_imgblog_left {
+  width: 50%;
+  height: 268px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form_imgblog_right {
+  width: 50%;
+  height: 268px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog_right_fix {
+  padding: 2%;
+  margin: 2% 2% 2% 0;
+  background: #ddebff;
+  width: 48%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.form_img_imageFix_Blog {
+  background: #fff;
+  border: 1px solid #ddebff;
+  border-radius: 5px;
+  width: 90%;
+  height: 210px;
+}
+.form_img_clickFix_blog {
+  margin-top: 4%;
+  width: 43%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ----------------- trạng thái đơn hàng ---------------------------*/
+.no_update {
+  width: 100%;
+  height: 78px;
+  display: flex;
+  justify-content: space-between;
+}
+.no_update_tt {
+  width: 54%;
+  display: flex;
+}
+.no_update_date {
+  width: 40%;
+  display: flex;
+}
+/* ------------------------- add -------------------- */
+.alert {
+  background: #c5f3d7;
+  padding: 10px;
+  min-width: 330px;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  border-radius: 8px;
+  border-left: 8px solid #2cd872;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  z-index: 2;
+}
+.alert.showAlert {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+.alert.show {
+  animation: show_slide 1s ease forwards;
+  z-index: 2;
+}
+@keyframes show_slide {
+  0% {
+    transform: translateX(100%);
+  }
+  40% {
+    transform: translateX(-10%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+.alert.hide {
+  animation: hide_slide 1s ease forwards;
+}
+@keyframes hide_slide {
+  0% {
+    transform: translateX(-10px);
+  }
+  40% {
+    transform: translateX(0%);
+  }
+  80% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.alert .msg {
+  padding: 2px 10px 0 10px;
+  font-size: 16px;
+  color: #24ab5d;
+}
+.alert .btn_alert_add {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #94eab9;
+  color: #24ab5d;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px 10px 12px 10px;
+  cursor: pointer;
+}
+.alert .btn_alert_add:hover {
+  background: #27ac5b;
+  color: #f9f9f9;
+}
+
+/* Chi tiết đơn hàng thanh toán */
+.frames_ChiTiet_DH_excel {
+  width: 100%;
+  padding: 0 3%;
+  margin-bottom: 1%;
+  font-size: 17px;
+  display: flex;
+}
+.img_ChiTiet_DH_excel {
+  width: 12%;
+  display: flex;
+}
+.name_ChiTiet_DH_excel {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name_ChiTiet_DH_excel {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sdt_ChiTiet_DH_excel {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.soluong_ChiTiet_DH_excel {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tongTien_ChiTiet_DH_excel {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ==================================== */
+
+.frames_ChiTiet_DH {
+  width: 100%;
+  padding: 1% 2%;
+  margin-bottom: 2%;
+  border-radius: 8px;
+  background: #f9f9f9;
+  display: flex;
+}
+.img_ChiTiet_DH {
+  width: 11.5%;
+  display: flex;
+}
+
+.name_ChiTiet_DH {
+  width: 25.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+.sdt_ChiTiet_DH {
+  width: 15.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.soluong_ChiTiet_DH {
+  width: 15.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tongTien_ChiTiet_DH {
+  width: 21%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_xemThem_DH {
+  width: 96%;
+  margin: 1% 2% 2% 2%;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+.btn_add_cancel_DH {
+  margin: 1%;
+  width: 20%;
+  height: 40px;
+}
+
+/* Chi tiết đơn hàng thanh toán */
+.frames_ChiTiet_DH_excel {
+  width: 100%;
+  padding: 0 3%;
+  margin-bottom: 1%;
+  font-size: 17px;
+  display: flex;
+}
+.img_ChiTiet_DH_excel {
+  width: 12%;
+  display: flex;
+}
+.name_ChiTiet_DH_excel {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name_ChiTiet_DH_excel {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sdt_ChiTiet_DH_excel {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.soluong_ChiTiet_DH_excel {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tongTien_ChiTiet_DH_excel {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ==================================== */
+
+.frames_ChiTiet_DH {
+  width: 100%;
+  padding: 1% 2%;
+  margin-bottom: 2%;
+  border-radius: 8px;
+  background: #f9f9f9;
+  display: flex;
+}
+.img_ChiTiet_DH {
+  width: 11.5%;
+  display: flex;
+}
+
+.name_ChiTiet_DH {
+  width: 25.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+.sdt_ChiTiet_DH {
+  width: 15.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.soluong_ChiTiet_DH {
+  width: 15.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tongTien_ChiTiet_DH {
+  width: 21%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_xemThem_DH {
+  width: 96%;
+  margin: 1% 2% 2% 2%;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+.btn_add_cancel_DH {
+  margin: 1%;
+  width: 20%;
+  height: 40px;
+}
+
+/* =============== doanh thu =============== */
+.form_doanhThu_top {
+  margin: 1.8% 0 0.8% 0;
+  padding: 0 24px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.doanhThu_date_end {
+  width: 22%;
+}
+.doanhThu_date_start {
+  width: 22%;
+  margin-left: 3%;
+}
+.form_loading_DT {
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
+}
+.btn_loading_DT {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 35%;
+}

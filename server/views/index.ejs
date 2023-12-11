@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var status = "<%- JSON.stringify(status) %>";
+      if (JSON.parse(status) == "verified") {
+        // if (confirm("Do u want to login?")) {
+        //   window.location.href = "http://localhost:8080/getThanhCong";
+        // }
+        alert("Đổi mật khẩu thành công !!");
+      }
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: white;
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+      }
+
+      .form_login_input {
+        margin: 0 auto;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: inline;
+        position: absolute;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 15px;
+        padding: 60px 40px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      form {
+        width: 310px;
+        padding-top: 30px;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+      }
+
+      .group {
+        position: relative;
+        width: 100%;
+        margin-bottom: 45px;
+      }
+
+      input {
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 300px;
+        border-radius: 5px;
+        border: 1px solid #757575;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      /* LABEL ======================================= */
+      label {
+        color: #999;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+      }
+
+      /* active state */
+      input:focus ~ label,
+      input:valid ~ label {
+        top: -20px;
+        font-size: 14px;
+        color: #5264ae;
+      }
+
+      /* BOTTOM BARS ================================= */
+      .bar {
+        position: relative;
+        display: block;
+        width: 300px;
+      }
+
+      .bar:before,
+      .bar:after {
+        content: "";
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #5264ae;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+      }
+
+      .bar:before {
+        left: 50%;
+      }
+
+      .bar:after {
+        right: 50%;
+      }
+
+      /* active state */
+      input:focus ~ .bar:before,
+      input:focus ~ .bar:after {
+        width: 50%;
+      }
+
+      /* HIGHLIGHTER ================================== */
+      .highlight {
+        position: absolute;
+        height: 60%;
+        width: 100px;
+        top: 25%;
+        left: 0;
+        pointer-events: none;
+        opacity: 0.5;
+      }
+
+      /* active state */
+      input:focus ~ .highlight {
+        -webkit-animation: inputHighlighter 0.3s ease;
+        -moz-animation: inputHighlighter 0.3s ease;
+        animation: inputHighlighter 0.3s ease;
+      }
+
+      /* ANIMATIONS ================ */
+      @-webkit-keyframes inputHighlighter {
+        from {
+          background: #5264ae;
+        }
+
+        to {
+          width: 0;
+          background: transparent;
+        }
+      }
+
+      @-moz-keyframes inputHighlighter {
+        from {
+          background: #5264ae;
+        }
+
+        to {
+          width: 0;
+          background: transparent;
+        }
+      }
+
+      @keyframes inputHighlighter {
+        from {
+          background: #5264ae;
+        }
+
+        to {
+          width: 0;
+          background: transparent;
+        }
+      }
+
+      .input_submit {
+        width: 300px;
+        background-color: #63a3f7;
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="form_login_input">
+      <h1 style="width: 100%; text-align: center"><%= EmailUser%></h1>
+      <!-- <form action="" method="post">
+      <input type="password" name="password" id="password" placeholder="password" /><br />
+      <input type="password" name="confirm-password" id="confirm-password" placeholder="confirm-password" /><br />
+      <input type="submit" value="submit" />
+    </form> -->
+
+      <form action="" method="post">
+        <div class="group">
+          <input type="password" name="password" id="password" required />
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Mật khẩu mới</label>
+        </div>
+
+        <div class="group">
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+            required
+          />
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Nhập lại mật khẩu</label>
+        </div>
+
+        <input class="input_submit" type="submit" value="Đổi mật khẩu" />
+      </form>
+    </div>
+  </body>
+</html>

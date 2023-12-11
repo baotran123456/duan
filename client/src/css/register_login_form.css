@@ -1,0 +1,126 @@
+/*--------  --------*/
+.container {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.user {
+  position: relative;
+  width: 100%;
+  margin: 0 0 5% 0;
+}
+.form__input {
+  width: 100%;
+}
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: -0.2rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+
+.user input {
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  /* border-color: #d8dde1; */
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  color: black;
+  outline: none;
+  padding: 18px 16px;
+  background: none;
+}
+
+.user input:hover {
+  border-color: #797b7c;
+}
+
+.user input:focus {
+  border-color: #2065d1;
+}
+
+.user label {
+  position: absolute;
+  left: 0.9rem;
+  top: 14px;
+  padding: 0 5px;
+  color: #797b7c;
+  font-size: 18px;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  background-color: #f9fafb;
+}
+.user img {
+  position: absolute;
+  right: 1.2rem;
+  top: 15px;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: -0.4rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+
+.cbx {
+  display: flex;
+  width: 100%;
+  margin: 0 0 5% 0;
+}
+.cbx_1 {
+  width: 70%;
+
+  display: flex;
+  justify-content: flex-start;
+}
+.cbx_1:hover {
+  background-attachment: fixed;
+}
+.cbx_ipt {
+  color: #797b7c;
+  display: flex;
+  width: 10%;
+  padding: 20px;
+  height: 20px;
+}
+.cbx_2 {
+  color: #2065d1;
+  width: 30%;
+}
+.cbx_2:hover {
+  color: #103996;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+}
+.form_warning {
+  padding: 0 16px;
+  width: 100%;
+  color: red;
+}
+
+/* frames_img */
+.frames_img {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ================================================================================================================================= */
+/* Login-register */
+.frames_img_login {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.frames_img_register {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

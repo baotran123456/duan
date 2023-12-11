@@ -1,0 +1,199 @@
+/* -------------------------------------------- TableCell --------------------------------------------*/
+
+.name_sp {
+  width: 20%;
+}
+.image_sp {
+  width: 13%;
+}
+
+.giaGoc_giaBan {
+  width: 15%;
+}
+.so_luong {
+  width: 5%;
+}
+.giam_gia {
+  width: 5%;
+}
+.trang_thai {
+  width: 17%;
+  font-size: 10px;
+}
+.trang_thai_2 {
+  border-radius: 6px;
+  padding: 4% 1.5%;
+  font-size: 12px;
+}
+.loai_chiTiet {
+  width: 18%;
+}
+.btn_xemThem {
+  width: 100%;
+  font-size: 12px;
+  height: 28px;
+}
+.moTa_LSP {
+  width: 40%;
+}
+/* user */
+.name_user {
+  width: 10%;
+}
+.trangthai_user {
+  width: 20%;
+}
+.password_user {
+  padding-top: 1%;
+  width: 100%;
+}
+.pass_user {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+/* blog */
+.name_blog {
+  width: 30%;
+}
+.like_blog {
+  width: 15%;
+}
+/* ================ trang thái đơn hàng =============== */
+.name_dh {
+  width: 17%;
+}
+.email_sdt {
+  width: 21%;
+}
+.address {
+  width: 18%;
+}
+.phuong_thuc_tt {
+  width: 14%;
+}
+.date_dh {
+  width: 11%;
+}
+.tong_tien {
+  width: 14%;
+}
+.trang_thai_dh {
+  width: 15%;
+  font-size: 10px;
+  padding-right: 0.5%;
+}
+.trang_thai_dh_2 {
+  border-radius: 6px;
+  padding: 4% 1%;
+  font-size: 12px;
+}
+.xemthem_dh {
+  width: 12%;
+}
+.btn_xemThem_dh {
+  width: 100%;
+  font-size: 10px;
+  padding-top: 7px;
+  height: 28px;
+}
+
+/* ================ trang doanh thu =============== */
+.ma_DT {
+  width: 11%;
+}
+
+.thongTin_DT {
+  width: 21%;
+}
+
+/* ========================================================================= */
+.switch {
+  margin-top: 3px;
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 15px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(20px);
+}
+
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* loading */
+.loading-spinner-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2065d1;
+  width: 100%;
+  height: 30px;
+  color: white;
+  border: none;
+  font-size: 16px;
+  /* border: 1px solid red; */
+  border-radius: 10px;
+}
+.loading-spinner-button:hover {
+  box-shadow: 10px 10px 5px 129px rgba(0, 0, 0, 0.1) inset;
+}
+.loading-spinner-button > img {
+  max-width: 25px;
+}
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
